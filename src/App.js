@@ -1,7 +1,6 @@
 import './App.css';
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from './utils/themes';
-import { BrowserRouter as Router } from 'react-router-dom';
 import Typewriter from "typewriter-effect";
 import ToolCard from './cards/card';
 import { ToolList } from './cards/card';
@@ -32,7 +31,7 @@ export const Title = styled.div`
   font-weight: 700;
   font-size: 100px;
   color: ${({ theme }) => theme.primary};
-  cursor: pointer;
+  cursor: default;
 
   @media (max-width: 640px) {
     font-size: 32px;
@@ -77,7 +76,6 @@ export const ToolsContainer = styled.div`
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Router>
       <Body>
         <Container>
             <Welcome>Welcome to</Welcome>
@@ -89,7 +87,6 @@ function App() {
             </ToolsContainer>
         </Container>
       </Body>
-      </Router>
     </ThemeProvider>
   );
 }

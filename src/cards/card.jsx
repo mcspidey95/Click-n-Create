@@ -61,6 +61,7 @@ export const ToolList= [
   {
     name: "QR Code Generator",
     icon: <FontAwesomeIcon icon={faQrcode} />,
+    link: "/qr-code"
   },
   {
     name: "Background Remover",
@@ -86,7 +87,7 @@ export const ToolList= [
 
 const ToolCard = ({tool}) => {
   return (
-    <Card href={tool.link} target="_blank">
+    <Card href={tool.link}>
       <Icon>{tool.icon}</Icon>
       <Title>{tool.name}</Title>
     </Card>
