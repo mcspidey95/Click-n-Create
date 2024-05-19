@@ -1,4 +1,4 @@
-import "./style.css"
+import './style.css';
 import React, { useState, useEffect } from 'react';
 
 const TextToSpeech = () => {
@@ -38,6 +38,8 @@ const TextToSpeech = () => {
       console.error('Please select a voice and enter text to speak.');
       return;
     }
+  
+  
 
     const speech = new SpeechSynthesisUtterance();
     speech.voice = selectedVoice;
@@ -51,7 +53,7 @@ const TextToSpeech = () => {
 
   return (
     <div className="hero">
-      <h1>Text To Speech <span>Converter</span></h1>
+      <h1>Text To Speech <a href='/speech-text'>Converter</a></h1>
       <textarea
         placeholder="Write anything here..."
         id="input-field"
@@ -63,7 +65,6 @@ const TextToSpeech = () => {
           {voiceOptions}
         </select>
         <button onClick={handleSpeak}>
-          
           Listen
         </button>
       </div>

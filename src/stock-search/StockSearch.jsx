@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Assuming you're using Axios for API calls
-import "./style.css"
+import './style.css';
 
 const ACCESS_KEY = 'rq9OoN6Qq_Gv1n_Cdk_S0fFx2Km6rHHbbfQyhKxGOgo'; // Replace with your Unsplash access key
 
@@ -50,8 +50,8 @@ const StockSearch = () => {
 
   return (
     <div>
-      <h1>Image Search Engine</h1>
-      <form onSubmit={handleSearch}>
+      <h1>Stock Image Search</h1>
+      <form className='fform' onSubmit={handleSearch}>
         <input type="text" id="search-box" placeholder="Search anything here..." value={keyword} onChange={(e) => setKeyword(e.target.value)} />
         <button type="submit">Search</button>
       </form>

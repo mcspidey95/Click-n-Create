@@ -1,4 +1,4 @@
-form{
+.form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +8,13 @@ form{
     width: 400px;
     cursor: pointer;
     border-radius: 5px;
+    gap: 10px;
+}
+
+.arrow{
+    text-align: center;
+    margin-top: 300px;
+    font-size: large;
 }
 
 .uploaded-row{
@@ -20,6 +27,7 @@ form{
     border-radius: 5px;
     background-color: #e9f0ff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .uploaded-row:hover{
@@ -42,6 +50,11 @@ form{
     transform: translate(-140%,-50%);
     background: #fff;
     border-radius: 10px;
+}
+
+.preview{
+    max-width: 400px;
+    max-height: 300px;
 }
 
 .bg-container-2{

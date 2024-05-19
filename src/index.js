@@ -7,6 +7,7 @@ import TextToSpeech from './text-speech/TextToSpeech';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import StockSearch from './stock-search/StockSearch';
 import ImageToText from './img-text/ImageToText';
+import SpeechToText from './text-speech/SpeechToText';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path='/qr-code' element={<QrCode />} />
         <Route path='/remove-bg' element={<BgRemover />} />
         <Route path='/text-speech' element={<TextToSpeech />} />
+        <Route path='/speech-text' element={<SpeechToText />} />
         <Route path='/stock-search' element={<StockSearch />} />
         <Route path='/img-text' element={<ImageToText />} />
       </Routes>
