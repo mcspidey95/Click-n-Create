@@ -5,7 +5,7 @@ import { faQrcode } from '@fortawesome/free-solid-svg-icons'
 import { faEraser } from '@fortawesome/free-solid-svg-icons'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
-import { faBrush } from '@fortawesome/free-solid-svg-icons'
+import { faImage } from '@fortawesome/free-solid-svg-icons'
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
 const Button = styled.button`
@@ -66,22 +66,27 @@ export const ToolList= [
   {
     name: "Background Remover",
     icon: <FontAwesomeIcon icon={faEraser} />,
+    link: "/remove-bg"
   },
   {
     name: "Code To Image Generator",
     icon: <FontAwesomeIcon icon={faCode} />,
+    link: "/code-export"
   },
   {
     name: "Text To Speech/ Speech To Text",
     icon: <FontAwesomeIcon icon={faComment} />,
+    link: "/text-speech"
   },
   {
-    name: "Color Palette Extractor",
-    icon: <FontAwesomeIcon icon={faBrush} />,
+    name: "Stock Image Search",
+    icon: <FontAwesomeIcon icon={faImage} />,
+    link: "/stock-search"
   },
   {
     name: "Text Extractor from Image",
     icon: <FontAwesomeIcon icon={faQuoteRight} />,
+    link: "/img-text"
   },
 ];
 

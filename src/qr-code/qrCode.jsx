@@ -27,7 +27,7 @@ const QrCode = () => {
     <body>
       <a href='/'><h1><FontAwesomeIcon icon={faArrowLeft} /></h1></a>
     <div className="container">
-      <p>Enter your text or URL</p>
+      <p>Enter Text or URL</p>
       <input
         type="text"
         id="qrText"
@@ -36,7 +36,7 @@ const QrCode = () => {
         onChange={handleInputChange}
         className={isError ? 'error' : ''} // Add error class conditionally
       />
-      <div>
+      <div className='img'>
         {qrImageSrc && <div className='image'><img src={qrImageSrc} id="qrImage" alt="QR Code" /></div>}
       </div>
       <button onClick={generateQR}>Generate QR Code</button>

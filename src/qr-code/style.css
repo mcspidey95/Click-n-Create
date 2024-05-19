@@ -18,6 +18,7 @@ body{
    
 }
 .container p{
+    text-align: center;
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 8px;
@@ -49,10 +50,10 @@ body{
     overflow: hidden;
     transition: max-height 1s;
 }
-img{
+.img{
     width: 250px;
     align-self: center;
-    padding-bottom: 70px;
+    padding-left: 90px;
 }
 
 h1{
