@@ -13,10 +13,12 @@ const BgRemover = () => {
     const [image, setImage] = useState(null);
     const [bgremove, setBgremove] = useState(null);
     const [preview, setPreview] = useState(null);
+    const [clicked, setClicked] = useState(false);
 
     const handleChangeBg = () => {
         const apikey = 'jRuEHkrHxKpBi6CefhzzSgpp';
         const url = 'https://api.remove.bg/v1.0/removebg';
+        setClicked(true);
         
         const formData = new FormData();
         formData.append('image_file', image);
@@ -51,7 +53,8 @@ const BgRemover = () => {
             <FontAwesomeIcon icon={faSprayCanSparkles} size='2x' /> Remove Background
         </section>
         </div>
-
+        
+        <div className='process'> {clicked ? (bgremove ? <p></p> : <p style={{color: 'white'}}>Processing...</p>) : <> <p></p> </>}</div>
         <div className='arrow'><ArrowRight color='#854CE6' size={100} /></div>
 
         <div className='bg-container-2'>

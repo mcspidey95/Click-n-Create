@@ -11,10 +11,20 @@
     gap: 10px;
 }
 
+.buton{
+    text-decoration: none;
+}
+
 .arrow{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20px;
     font-size: large;
+}
+
+.process{
+    text-align: center;
+    margin-top: 180px;
+    font-size: small;
 }
 
 .uploaded-row{
