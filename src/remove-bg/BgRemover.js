@@ -7,6 +7,7 @@ import { faSprayCanSparkles } from '@fortawesome/free-solid-svg-icons'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 import { faImage } from '@fortawesome/free-solid-svg-icons'
 import { ArrowRight } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 
 const BgRemover = () => {
     const [image, setImage] = useState(null);
@@ -36,6 +37,7 @@ const BgRemover = () => {
 
   return (
     <main>
+        <a href='/'><h2 className='h2'><ChevronLeft size={60} /></h2></a>
         <div className='bg-container-1'>
         <div className='form' onClick={() => document.querySelector(".input-field").click()} onChange={(e) => {setImage(e.target.files[0])}}>
             <input type='file' accept='image/*' className='input-field' hidden onChange={

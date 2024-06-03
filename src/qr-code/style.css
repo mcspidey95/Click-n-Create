@@ -66,10 +66,6 @@ h1{
     cursor: default;
 }
 
-.h1:hover{
-    filter: brightness(3);
-}
-
 .error{
     animation: shake 0.1s liner 10;
 }

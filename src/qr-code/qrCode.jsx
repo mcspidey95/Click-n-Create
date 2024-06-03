@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { ChevronLeft } from 'lucide-react';
 
 
 const QrCode = () => {
@@ -25,13 +24,13 @@ const QrCode = () => {
 
   return (
     <body>
-      <a href='/'><h1><FontAwesomeIcon icon={faArrowLeft} /></h1></a>
+      <a href='/'><h2 className='h2'><ChevronLeft size={60} /></h2></a>
     <div className="container">
       <p>Enter Text or URL</p>
       <input
         type="text"
         id="qrText"
-        placeholder="Text or URL"
+        placeholder="Enter Herey"
         value={qrText}
         onChange={handleInputChange}
         className={isError ? 'error' : ''} // Add error class conditionally
@@ -39,7 +38,7 @@ const QrCode = () => {
       <div className='img'>
         {qrImageSrc && <div className='image'><img src={qrImageSrc} id="qrImage" alt="QR Code" /></div>}
       </div>
-      <button onClick={generateQR}>Generate QR Code</button>
+      <button className='container-button' onClick={generateQR}>Generate QR Code</button>
       {isError && <p className="error-message">Please enter text or URL to generate QR Code.</p>}
     </div>
     </body>

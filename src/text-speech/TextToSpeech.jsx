@@ -1,5 +1,6 @@
 import './style.css';
 import React, { useState, useEffect } from 'react';
+import { ChevronLeft } from 'lucide-react';
 
 const TextToSpeech = () => {
   const [text, setText] = useState('');
@@ -52,8 +53,11 @@ const TextToSpeech = () => {
   ));
 
   return (
+    <div>
+      <a href='/'><h2 className='h2'><ChevronLeft size={60} /></h2></a>
+    <div className='inline'>
     <div className="hero">
-      <h1>Text To Speech <a href='/speech-text'>Converter</a></h1>
+      <h1>Text To Speech <a className='converter' href='/speech-text'>Converter</a></h1>
       <textarea
         placeholder="Write anything here..."
         id="input-field"
@@ -64,10 +68,12 @@ const TextToSpeech = () => {
         <select onChange={handleVoiceChange}>
           {voiceOptions}
         </select>
-        <button onClick={handleSpeak}>
+        <button className='button' onClick={handleSpeak}>
           Listen
         </button>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Assuming you're using Axios for API calls
 import './style.css';
+import { ChevronLeft } from 'lucide-react';
 
 const ACCESS_KEY = 'rq9OoN6Qq_Gv1n_Cdk_S0fFx2Km6rHHbbfQyhKxGOgo'; // Replace with your Unsplash access key
 
@@ -50,6 +51,8 @@ const StockSearch = () => {
 
   return (
     <div>
+      <a href='/'><h2 className='h2'><ChevronLeft size={60} /></h2></a>
+      <div className='inline-search'>
       <h1>Stock Image Search</h1>
       <form className='fform' onSubmit={handleSearch}>
         <input type="text" id="search-box" placeholder="Search anything here..." value={keyword} onChange={(e) => setKeyword(e.target.value)} />
@@ -65,6 +68,7 @@ const StockSearch = () => {
         ))}
       </div>
       {images.length > 0 && <button id="show-more-btn" onClick={handleShowMore} disabled={isLoading}>Show more</button>}
+    </div>
     </div>
   );
 };

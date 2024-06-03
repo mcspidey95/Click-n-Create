@@ -13,7 +13,7 @@
 
 .arrow{
     text-align: center;
-    margin-top: 300px;
+    margin-top: 200px;
     font-size: large;
 }
 
@@ -28,6 +28,21 @@
     background-color: #e9f0ff;
     cursor: pointer;
     text-decoration: none;
+}
+
+.h2{
+    margin: 30px;
+    color: #854CE6;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.h2:hover{
+    filter: brightness(3);
+}
+
+.but{
+    margin-bottom: 5px;
 }
 
 .uploaded-row:hover{
