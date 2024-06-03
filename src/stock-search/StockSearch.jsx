@@ -52,7 +52,7 @@ const StockSearch = () => {
   return (
     <div>
       <a href='/'><h2 className='h2'><ChevronLeft size={60} /></h2></a>
-      <div className='inline-search'>
+      <div>
       <h1>Stock Image Search</h1>
       <form className='fform' onSubmit={handleSearch}>
         <input type="text" id="search-box" placeholder="Search anything here..." value={keyword} onChange={(e) => setKeyword(e.target.value)} />

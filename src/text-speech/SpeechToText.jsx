@@ -18,7 +18,7 @@ const SpeechToText = () => {
   return (
     <div>
       <a href='/'><h2 className='h2'><ChevronLeft size={60} /></h2></a>
-      <div className='inline'>
+      <div>
     <div className="hero">
       <h1>Speech To Text <a className='converter' href='/text-speech'>Converter</a></h1>
       <textarea
