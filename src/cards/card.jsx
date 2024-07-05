@@ -71,7 +71,7 @@ export const ToolList= [
   {
     name: "Code To Image Generator",
     icon: <FontAwesomeIcon icon={faCode} />,
-    link: "/code-export"
+    link: "https://code-export.vercel.app/"
   },
   {
     name: "Text To Speech/ Speech To Text",
